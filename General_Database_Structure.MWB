@@ -1,0 +1,29 @@
+
+CREATE SCHEMA `new_schema` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+
+CREATE TABLE `new_schema`.`new_table` (
+  `id` INT NOT NULL COMMENT 'This is a primary index',
+  PRIMARY KEY (`id`)
+);
+
+
+
+DROP TABLE `new_schema`.`new_table`;
+
+
+TRUNCATE `new_schema`.`new_table`;
+
+
+CREATE SCHEMA `new_schema` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE TABLE `new_schema`.`users` (
+  `id` INT NOT NULL AUTO_INCREMENT COMMENT 'This is the primary index',
+  `name` VARCHAR(45) NOT NULL DEFAULT 'N/A',
+  PRIMARY KEY (`id`)
+);
+
+ALTER TABLE `new_schema`.`users`
+ADD COLUMN `age` INT NULL AFTER `user_name`;
+
+
