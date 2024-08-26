@@ -52,3 +52,13 @@ Output:
 
 
 SELECT name, population, area FROM world WHERE population >= 25000000 or area >=3000000
+
+
+
+-- Select countries with either a large population or a large area
+SELECT name, population, area
+FROM world
+WHERE population >= 25000000  -- Countries with a population of 25 million or more
+   OR area >= 3000000         -- Countries with an area of 3 million square kilometers or more
+ORDER BY name;                -- Sort results alphabetically by country name
+
