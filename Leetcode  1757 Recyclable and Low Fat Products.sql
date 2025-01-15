@@ -1,4 +1,5 @@
 '''
+ 
 Leetcode  1757 Recyclable and Low Fat Products
 
 Table: Products
