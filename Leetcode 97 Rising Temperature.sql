@@ -1,5 +1,4 @@
 '''
-
 Leetcode 97 Rising Temperature
 
 Table: Weather
